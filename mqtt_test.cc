@@ -6,7 +6,6 @@
 TEST(MQTTTest, mqtt_option_init_by_config)
 {
     neu_config_t config;
-    memset(&config, 0, sizeof(neu_config_t));
     neu_mqtt_option_t option;
     memset(&option, 0, sizeof(neu_mqtt_option_t));
     config.buf = (char *) "{\"node_id\":5,\"params\":{\"client-id\":"
